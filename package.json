@@ -1,0 +1,17 @@
+{
+  "name": "multipingweb",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "net-ping": "1.1.11"
+  },
+  "description": "netping for lan",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": "",
+  "author": "jpuyy",
+  "license": "BSD"
+}
