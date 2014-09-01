@@ -8,7 +8,7 @@ var fs = require('fs');
       });
 var ping = require("net-ping");
 var session = ping.createSession();
-var parents = ['192.168.1.','10.10.1.', '192.168.2.','10.10.2.',  '192.168.3.','10.10.3.', '192.168.4.','10.10.4.',  '192.168.5.',   '10.10.5.'];
+var parents = ['192.168.1.', '192.168.2.'];
 
 server.on('request', function(req, res) {
   var url_parts = url.parse(req.url, true);
