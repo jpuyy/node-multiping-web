@@ -1,5 +1,7 @@
-var http = require('http'),
-    url = require('url');
+var http = require('http');
+var url = require('url');
+
+function start() {
 var server = http.createServer().listen(8989, '0.0.0.0');
 var fs = require('fs');
       fs.writeFile('result.txt','',function (err) {
@@ -63,3 +65,7 @@ server.on('request', function(req, res) {
   res.end();
 });
 console.log("server initialized");
+}
+
+
+exports.start = start;
